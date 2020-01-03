@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="#f0f0f0"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.skripsi.lamp.MainActivity"
+    tools:showIn="@layout/activity_rename_saklar">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="#E1E1E1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:text="Nama Saklar"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editSaklar"
+                android:padding="5dp"
+                android:inputType="textPersonName"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_weight=".70" />
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            style="@style/btnStyleBlue"
+            android:padding="12dp"
+            android:text="Ubah Nama"/>
+
+    </LinearLayout>
+</RelativeLayout>
